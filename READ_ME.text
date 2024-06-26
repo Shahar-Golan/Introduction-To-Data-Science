@@ -1,0 +1,18 @@
+pip install pandas nltk
+pip install nltk
+pip install seaborn
+
+import pandas as pd
+import collections
+import matplotlib.pyplot as plt
+import nltk
+import re
+
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from nltk.stem import PorterStemmer
+from nltk.stem import WordNetLemmatizer
+
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('omw-1.4')

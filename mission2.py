@@ -95,31 +95,3 @@ def numSubClassPPL(subclass, classinfo):
     return 0
 
 
-def main():
-    x = X()
-    y = Y()
-
-    # Test isInstancePPL function
-    print(f'isInstancePPL(x, X): {isInstancePPL(x, X)}')  # Expected: True
-    print(f'isInstancePPL(y, X): {isInstancePPL(y, X)}')  # Expected: False, but should be True if isinstance used
-    print(f'isInstancePPL(y, Y): {isInstancePPL(y, Y)}')  # Expected: True
-    print(f'isInstancePPL(x, Y): {isInstancePPL(x, Y)}')  # Expected: False
-
-    print(f'numInstancePPL(x, X): {numInstancePPL(x, X)}')  # Expected: 1
-    print(f'numInstancePPL(y, X): {numInstancePPL(y, X)}')  # Expected: 1
-    print(f'numInstancePPL(y, Y): {numInstancePPL(y, Y)}')  # Expected: 1
-    print(f'numInstancePPL(x, Y): {numInstancePPL(x, Y)}')  # Expected: 0
-
-    print(f'subClassPPL(Y, X): {subClassPPL(Y, X)}')  # Expected: True
-    print(f'subClassPPL(X, Y): {subClassPPL(X, Y)}')  # Expected: False
-    print(f'subClassPPL(X, X): {subClassPPL(X, X)}')  # Expected: False
-    print(f'subClassPPL(Y, Y): {subClassPPL(Y, Y)}')  # Expected: False
-
-    print(f'numSubClassPPL(Y, X): {numSubClassPPL(Y, X)}')  # Expected: 1
-    print(f'numSubClassPPL(X, Y): {numSubClassPPL(X, Y)}')  # Expected: 0
-    print(f'numSubClassPPL(X, X): {numSubClassPPL(X, X)}')  # Expected: 1
-    print(f'numSubClassPPL(Y, Y): {numSubClassPPL(Y, Y)}')  # Expected: 1
-
-
-if __name__ == "__main__":
-    main()
